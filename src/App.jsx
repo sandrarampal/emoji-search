@@ -21,8 +21,6 @@ function App() {
     <div className="main-div">
       <Search setSearch={setSearch} search={search} />
       {firstEmoji.map((emoji, index) => {
-        console.log(index);
-
         return <Line emoji={emoji} index={index} key={index} />;
       })}
       <Footer />
